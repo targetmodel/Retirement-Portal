@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RSP</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/typography.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/app.css" rel="stylesheet">
+  <link href="css/media.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="navbar navbar-fixed-top" id="header" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand"><img src="img/logo.png" alt="RSP"/></a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="plans.html">plans</a></li>
+        <li><a href="contact.html">contacts</a></li>
+        <li><button class="btn btn-yellow" data-toggle="modal" data-target="#loginbox">SIGN IN</button></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+<div id="global">
+  <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="active item">
+        <img src="img/fullimage1.jpg" alt="1"/>
+        <div class="carousel-caption">
+          <h3>First slide label</h3>
+          <p>Lorem ipsum dolor sit amet consectetur…</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/fullimage2.jpg" alt="1"/>
+        <div class="carousel-caption">
+          <h3>Second slide label</h3>
+          <p>Aliquam sit amet gravida nibh, facilisis gravida…</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/fullimage3.jpg" alt="1"/>
+        <div class="carousel-caption">
+          <h3>Third slide label</h3>
+          <p>Praesent commodo cursus magna vel…</p>
+        </div>
+      </div>
+    </div>
+    <div class="showcase-control">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+    </div>
+  </div>
+  <div class="showcase">
+    <div class="container">
+      <div class="showcase-inner clearfix">
+        <span class="half-border half-border-left">&nbsp;</span>
+        <span class="half-border half-border-right">&nbsp;</span>
+        <span class="half-border half-border-bottom">&nbsp;</span>
+        <div class="col-sm-4 single-item">
+          <img src="img/dummy1.jpg" alt="dummy1" class="img-responsive"/>
+          <h2 class="showcase-heading">What you are expected to need?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis deserunt</p>
+        </div>
+        <div class="col-sm-4 single-item">
+          <img src="img/dummy2.jpg" alt="dummy2" class="img-responsive"/>
+          <h2 class="showcase-heading">What you are expected to need?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis deserunt</p>
+        </div>
+        <div class="col-sm-4 single-item">
+          <img src="img/dummy3.jpg" alt="dummy3" class="img-responsive"/>
+          <h2 class="showcase-heading">What you are expected to need?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis deserunt</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="upper-footer clearfix">
+        <ul class="list-inline footer-link pull-left">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Plans</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+        <div class="social pull-right">
+          <ul class="list-inline">
+            <li>connect with us</li>
+            <li><a href="#" class="facebook">&nbsp;</a></li>
+            <li><a href="#" class="twitter">&nbsp;</a></li>
+            <li><a href="#" class="gplus">&nbsp;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="lower-footer">
+        <p>Copyright &copy; 2014. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Login Modal -->
+<div class="modal fade" id="loginbox" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="no-margin">Sign In</h4>
+      </div>
+      <div class="modal-body">
+        <form action="#" class="login-form">
+          <div class="form-group">
+            <span class="fa fa-user"></span>
+            <input type="text" class="form-control" placeholder="User Name"/>
+          </div>
+          <div class="form-group">
+            <span class="fa fa-lock"></span>
+            <input type="password" class="form-control" placeholder="Password"/>
+          </div>
+          <div class="form-group no-margin clearfix">
+            <div class="pull-left">
+              <input type="checkbox" id="remember"/><label for="remember">Remember me</label>
+            </div>
+            <input type="submit" value="Login" class="btn btn-primary pull-right"/>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+
+
+<script type="text/javascript">
+  //$("#myCarousel").carousel();
+  var $showCont = $('.item.active .carousel-caption').clone();
+  $showCont.prependTo('.showcase-control');
+  $('#myCarousel').on('slid.bs.carousel', function () {
+    var $showCont = $('.item.active .carousel-caption').html();
+    $('.showcase-control .carousel-caption').html($showCont);
+  });
+</script>
+</body>
+</html>
